@@ -4,11 +4,11 @@ namespace CollectionAPI.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class Prodcuts : ControllerBase
+    public class Product : ControllerBase
     {
         private static readonly List<string> productItems = new();
-        private readonly ILogger<Prodcuts> logger;
-        public Prodcuts(ILogger<Prodcuts> _logger)
+        private readonly ILogger<Product> logger;
+        public Product(ILogger<Product> _logger)
         {
             logger = _logger;
         }
